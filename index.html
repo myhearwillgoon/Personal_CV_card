@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>程权 | 个人名片</title>
+    <meta name="description" content="程权的个人名片网站 - 了解我的专业背景和联系方式">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- 添加字体图标 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="card-container">
+        <div class="profile-card">
+            <!-- 头像区域 -->
+            <div class="avatar-section">
+                <div class="avatar">
+                    <span>CQ</span>
+                </div>
+            </div>
+            
+            <!-- 基本信息 -->
+            <div class="info-section">
+                <h1 class="name">程权</h1>
+                <p class="title">全栈开发工程师 / 技术顾问</p>
+                <p class="bio">热爱技术，专注于 Web 开发和系统架构设计。擅长前端、后端以及 DevOps 技术栈。</p>
+            </div>
+            
+            <!-- 联系方式 -->
+            <div class="contact-section">
+                <h2>联系方式</h2>
+                <div class="contact-links">
+                    <a href="mailto:chengquan@example.com" class="contact-item" title="邮箱">
+                        <i class="fas fa-envelope"></i>
+                        <span>邮箱联系</span>
+                    </a>
+                    <a href="https://github.com/chengquan" target="_blank" class="contact-item" title="GitHub">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="#" class="contact-item" title="微信" onclick="showWeChat()">
+                        <i class="fab fa-weixin"></i>
+                        <span>微信</span>
+                    </a>
+                    <a href="resume.pdf" target="_blank" class="contact-item" title="简历">
+                        <i class="fas fa-file-pdf"></i>
+                        <span>下载简历</span>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- 技能标签 -->
+            <div class="skills-section">
+                <h2>技能专长</h2>
+                <div class="skills-tags">
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">TypeScript</span>
+                    <span class="tag">React</span>
+                    <span class="tag">Vue.js</span>
+                    <span class="tag">Node.js</span>
+                    <span class="tag">Python</span>
+                    <span class="tag">Docker</span>
+                    <span class="tag">AWS</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 页脚 -->
+        <footer class="footer">
+            <p>&copy; 2024 程权. All Rights Reserved.</p>
+            <p>使用 <i class="fas fa-heart" style="color: #e74c3c;"></i> 和 GitHub Pages 构建</p>
+        </footer>
+    </div>
+    
+    <!-- 微信弹窗 -->
+    <div id="wechat-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeWeChat()">&times;</span>
+            <h3>添加微信</h3>
+            <p>微信号：<strong>chengquan_dev</strong></p>
+            <p class="hint">扫描二维码或直接搜索微信号添加</p>
+        </div>
+    </div>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>

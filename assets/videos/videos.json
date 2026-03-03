@@ -1,0 +1,34 @@
+{
+  "videos": [
+    {
+      "id": 1,
+      "title": "Openclaw+Open-notebook知识库读取文献演示",
+      "filename": "Openclaw_Open-notebook_demo.mp4",
+      "thumbnail": "Openclaw_Open-notebook_demo_thumb.jpg",
+      "duration": "00:05:52.83",
+      "durationFormatted": "5分52秒",
+      "description": "演示如何使用Openclaw和Open-notebook读取知识库文献，展示AI工具在文献管理中的应用",
+      "tags": ["Openclaw", "Open-notebook", "知识库", "文献管理", "AI工具"]
+    },
+    {
+      "id": 2,
+      "title": "RAG知识库",
+      "filename": "RAG_knowledge_base.mp4",
+      "thumbnail": "RAG_knowledge_base_thumb.jpg",
+      "duration": "00:00:56.13",
+      "durationFormatted": "56秒",
+      "description": "介绍RAG（检索增强生成）知识库的原理和实现方式",
+      "tags": ["RAG", "知识库", "检索增强生成", "AI", "NLP"]
+    },
+    {
+      "id": 3,
+      "title": "RAG知识库排除幻觉",
+      "filename": "RAG_hallucination_elimination.mp4",
+      "thumbnail": "RAG_hallucination_elimination_thumb.jpg",
+      "duration": "00:01:11.25",
+      "durationFormatted": "1分11秒",
+      "description": "演示RAG知识库如何有效减少和排除AI生成内容中的幻觉问题",
+      "tags": ["RAG", "幻觉消除", "知识库", "AI可靠性", "内容安全"]
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+# GitHub Pages 配置
+theme: jekyll-theme-minimal
+title: 程权 - 个人名片
+description: 程权的个人名片网站 - 了解我的专业背景和联系方式
+
+# 作者信息
+author:
+  name: 程权
+  email: chengquan@example.com
+
+# 社交媒体
+social:
+  github: chengquan
+  
+# 插件
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# 排除文件
+exclude:
+  - .gitignore
+  - README.md
+  - .github/
+  - node_modules/
