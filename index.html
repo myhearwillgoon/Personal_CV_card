@@ -3,82 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>程权 | 个人名片</title>
-    <meta name="description" content="程权的个人名片网站 - 了解我的专业背景和联系方式">
+    <title>程权 - AI Product Architect | 个人名片</title>
+    <meta name="description" content="程权的个人名片网站 - AI Product Architect，展示AI项目作品">
     <link rel="stylesheet" href="css/style.css">
-    <!-- 添加字体图标 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <div class="card-container">
-        <div class="profile-card">
-            <!-- 头像区域 -->
-            <div class="avatar-section">
-                <div class="avatar">
-                    <span>CQ</span>
+    <div class="container">
+        <!-- 主内容区 -->
+        <main class="main-card">
+            <!-- 左侧：个人信息 -->
+            <section class="profile-section">
+                <div class="avatar-container">
+                    <div class="avatar">
+                        <span class="avatar-text">程权</span>
+                    </div>
+                    <div class="status-indicator" title="在线"></div>
                 </div>
-            </div>
-            
-            <!-- 基本信息 -->
-            <div class="info-section">
+                
                 <h1 class="name">程权</h1>
-                <p class="title">全栈开发工程师 / 技术顾问</p>
-                <p class="bio">热爱技术，专注于 Web 开发和系统架构设计。擅长前端、后端以及 DevOps 技术栈。</p>
-            </div>
-            
-            <!-- 联系方式 -->
-            <div class="contact-section">
-                <h2>联系方式</h2>
-                <div class="contact-links">
-                    <a href="mailto:chengquan@example.com" class="contact-item" title="邮箱">
+                <p class="title">AI Product Architect</p>
+                <p class="location"><i class="fas fa-map-marker-alt"></i> London, UK</p>
+                
+                <div class="contact-info">
+                    <a href="mailto:cheng_imperial_london@outlook.com" class="contact-link">
                         <i class="fas fa-envelope"></i>
-                        <span>邮箱联系</span>
+                        <span>cheng_imperial_london@outlook.com</span>
                     </a>
-                    <a href="https://github.com/chengquan" target="_blank" class="contact-item" title="GitHub">
+                </div>
+                
+                <div class="social-links">
+                    <a href="#" class="social-btn github" title="GitHub">
                         <i class="fab fa-github"></i>
-                        <span>GitHub</span>
                     </a>
-                    <a href="#" class="contact-item" title="微信" onclick="showWeChat()">
+                    <a href="#" class="social-btn linkedin" title="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="social-btn wechat" title="微信" onclick="showWeChat(); return false;">
                         <i class="fab fa-weixin"></i>
-                        <span>微信</span>
-                    </a>
-                    <a href="resume.pdf" target="_blank" class="contact-item" title="简历">
-                        <i class="fas fa-file-pdf"></i>
-                        <span>下载简历</span>
                     </a>
                 </div>
-            </div>
+            </section>
             
-            <!-- 技能标签 -->
-            <div class="skills-section">
-                <h2>技能专长</h2>
-                <div class="skills-tags">
-                    <span class="tag">JavaScript</span>
-                    <span class="tag">TypeScript</span>
-                    <span class="tag">React</span>
-                    <span class="tag">Vue.js</span>
-                    <span class="tag">Node.js</span>
-                    <span class="tag">Python</span>
-                    <span class="tag">Docker</span>
-                    <span class="tag">AWS</span>
+            <!-- 中间：关于我 -->
+            <section class="about-section">
+                <h2><i class="fas fa-user"></i> 关于我</h2>
+                <div class="about-content">
+                    <p>我是一名专注于 AI 产品架构的技术专家，致力于将前沿人工智能技术转化为实用的产品解决方案。</p>
+                    <p>在 Imperial College London 的学习和工作经历，让我具备了扎实的技术功底和国际化视野。我擅长将复杂的 AI 概念转化为用户友好的产品体验。</p>
+                    <p>目前专注于大语言模型应用、RAG 知识库系统和智能自动化工具的开发。</p>
                 </div>
-            </div>
-        </div>
+                
+                <div class="skills-section">
+                    <h3><i class="fas fa-code"></i> 技能专长</h3>
+                    <div class="skill-tags">
+                        <span class="tag">AI/ML</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">OpenClaw</span>
+                        <span class="tag">RAG</span>
+                        <span class="tag">LLM</span>
+                        <span class="tag">知识库</span>
+                        <span class="tag">产品架构</span>
+                        <span class="tag">自动化</span>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- 右侧：作品集 -->
+            <section class="portfolio-section">
+                <h2><i class="fas fa-video"></i> 作品展示</h2>
+                <div class="video-grid">
+                    <div class="video-card" onclick="openVideo(0)">
+                        <div class="video-thumbnail">
+                            <img src="assets/videos/Openclaw_Open-notebook_demo_thumb.jpg" alt="Openclaw知识库演示">
+                            <div class="play-overlay">
+                                <i class="fas fa-play-circle"></i>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <h3>Openclaw+Open-notebook知识库</h3>
+                            <p><i class="fas fa-clock"></i> 5:52</p>
+                        </div>
+                    </div>
+                    
+                    <div class="video-card" onclick="openVideo(1)">
+                        <div class="video-thumbnail">
+                            <img src="assets/videos/RAG_knowledge_base_thumb.jpg" alt="RAG知识库">
+                            <div class="play-overlay">
+                                <i class="fas fa-play-circle"></i>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <h3>RAG知识库系统</h3>
+                            <p><i class="fas fa-clock"></i> 0:56</p>
+                        </div>
+                    </div>
+                    
+                    <div class="video-card" onclick="openVideo(2)">
+                        <div class="video-thumbnail">
+                            <img src="assets/videos/RAG_hallucination_elimination_thumb.jpg" alt="RAG排除幻觉">
+                            <div class="play-overlay">
+                                <i class="fas fa-play-circle"></i>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <h3>RAG知识库排除幻觉</h3>
+                            <p><i class="fas fa-clock"></i> 1:11</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
         
         <!-- 页脚 -->
         <footer class="footer">
-            <p>&copy; 2024 程权. All Rights Reserved.</p>
-            <p>使用 <i class="fas fa-heart" style="color: #e74c3c;"></i> 和 GitHub Pages 构建</p>
+            <p>&copy; 2026 程权. All rights reserved.</p>
+            <p class="footer-links">
+                <a href="assets/resume.pdf" download><i class="fas fa-download"></i> 下载简历</a>
+            </p>
         </footer>
+    </div>
+    
+    <!-- 视频播放弹窗 -->
+    <div id="video-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeVideo()">&times;</span>
+            <video id="video-player" controls>
+                <source src="" type="video/mp4">
+                您的浏览器不支持视频播放。
+            </video>
+            <h3 id="video-title"></h3>
+        </div>
     </div>
     
     <!-- 微信弹窗 -->
     <div id="wechat-modal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeWeChat()">&times;</span>
-            <h3>添加微信</h3>
-            <p>微信号：<strong>chengquan_dev</strong></p>
-            <p class="hint">扫描二维码或直接搜索微信号添加</p>
+        <div class="modal-content wechat-content">
+            <span class="close-btn" onclick="closeWeChat()">&times;</span>
+            <h3><i class="fab fa-weixin"></i> 微信联系</h3>
+            <div class="wechat-info">
+                <p>请发送邮件至：</p>
+                <p class="email-highlight">cheng_imperial_london@outlook.com</p>
+                <p>获取微信二维码</p>
+            </div>
         </div>
     </div>
     
