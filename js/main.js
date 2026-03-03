@@ -1,3 +1,17 @@
+// 打开简历预览
+function openResume() {
+    const modal = document.getElementById('resume-modal');
+    modal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+
+// 关闭简历预览
+function closeResume() {
+    const modal = document.getElementById('resume-modal');
+    modal.classList.remove('active');
+    document.body.style.overflow = '';
+}
+
 // 视频配置
 const videos = [
     {
@@ -59,12 +73,16 @@ function closeWeChat() {
 document.addEventListener('click', function(e) {
     const videoModal = document.getElementById('video-modal');
     const wechatModal = document.getElementById('wechat-modal');
+    const resumeModal = document.getElementById('resume-modal');
     
     if (e.target === videoModal) {
         closeVideo();
     }
     if (e.target === wechatModal) {
         closeWeChat();
+    }
+    if (e.target === resumeModal) {
+        closeResume();
     }
 });
 
@@ -73,6 +91,7 @@ document.addEventListener('keydown', function(e) {
     if (e.key === 'Escape') {
         closeVideo();
         closeWeChat();
+        closeResume();
     }
 });
 

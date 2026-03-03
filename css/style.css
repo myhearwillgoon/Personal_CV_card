@@ -177,42 +177,123 @@ body {
     transform: translateY(-3px);
 }
 
-/* ========== 中间：简历预览 ========== */
-.resume-section {
+/* ========== 中间：关于我 + 简历 ========== */
+.center-section {
     padding: 30px 25px;
     display: flex;
     flex-direction: column;
+    gap: 30px;
+    overflow-y: auto;
+    max-height: 90vh;
 }
 
-.resume-section h2 {
+.about-block h2 {
     font-size: 20px;
     color: var(--text-dark);
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-.resume-section h2 i {
+.about-block h2 i {
     color: var(--primary);
 }
 
-.resume-preview-container {
-    flex: 1;
-    background: var(--bg-light);
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.08);
-    margin-bottom: 20px;
-    min-height: 400px;
+.about-content {
+    margin-bottom: 25px;
 }
 
-.resume-iframe {
-    width: 100%;
-    height: 100%;
-    min-height: 400px;
-    border: none;
+.about-content p {
+    color: var(--text-light);
+    margin-bottom: 12px;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+/* 简历区块 */
+.resume-block {
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    border-radius: 12px;
+    padding: 20px;
+    border: 2px dashed #cbd5e0;
+}
+
+.resume-block h2 {
+    font-size: 18px;
+    color: var(--text-dark);
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.resume-block h2 i {
+    color: #e53e3e;
+}
+
+.resume-preview {
     background: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s ease;
+    border: 1px solid #e2e8f0;
+}
+
+.resume-preview:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.resume-thumb {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.resume-thumb i {
+    font-size: 48px;
+    color: #e53e3e;
+}
+
+.resume-thumb span {
+    font-size: 14px;
+    color: var(--text-light);
+    font-weight: 500;
+}
+
+.resume-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(102, 126, 234, 0.9);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    color: white;
+}
+
+.resume-preview:hover .resume-overlay {
+    opacity: 1;
+}
+
+.resume-overlay i {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.resume-overlay span {
+    font-size: 14px;
+    font-weight: 600;
 }
 
 .download-btn {
@@ -220,15 +301,15 @@ body {
     align-items: center;
     justify-content: center;
     gap: 10px;
-    padding: 14px 24px;
+    padding: 12px 20px;
     background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
     color: white;
     text-decoration: none;
-    border-radius: 10px;
+    border-radius: 8px;
     font-weight: 600;
-    font-size: 15px;
+    font-size: 14px;
     transition: var(--transition);
-    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+    width: 100%;
 }
 
 .download-btn:hover {
@@ -236,11 +317,38 @@ body {
     box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
 }
 
-.download-btn i {
-    font-size: 16px;
+/* 简历弹窗 */
+.resume-modal-content {
+    max-width: 90vw;
+    width: 900px;
+    max-height: 95vh;
 }
 
-/* ========== 旧版关于我样式（保留备用）========== */
+.pdf-viewer {
+    height: 70vh;
+    background: #f5f5f5;
+}
+
+.pdf-viewer iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.pdf-actions {
+    padding: 20px;
+    background: white;
+    border-top: 1px solid #e2e8f0;
+    text-align: center;
+}
+
+.pdf-actions .download-btn {
+    display: inline-flex;
+    width: auto;
+    padding: 12px 30px;
+}
+
+/* ========== 旧样式保留 ========== */
 .about-section {
     padding: 40px 30px;
 }

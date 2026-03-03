@@ -45,15 +45,49 @@
                 </div>
             </section>
             
-            <!-- 中间：简历预览 -->
-            <section class="resume-section">
-                <h2><i class="fas fa-file-alt"></i> 简历预览</h2>
-                <div class="resume-preview-container">
-                    <iframe src="assets/resume.pdf" class="resume-iframe" title="简历预览"></iframe>
+            <!-- 中间：关于我 + 简历 -->
+            <section class="center-section">
+                <!-- 关于我 -->
+                <div class="about-block">
+                    <h2><i class="fas fa-user"></i> 关于我</h2>
+                    <div class="about-content">
+                        <p>我是一名专注于 AI 产品架构的技术专家，致力于将前沿人工智能技术转化为实用的产品解决方案。</p>
+                        <p>在 Imperial College London 的学习和工作经历，让我具备了扎实的技术功底和国际化视野。</p>
+                        <p>目前专注于大语言模型应用、RAG 知识库系统和智能自动化工具的开发。</p>
+                    </div>
+                    
+                    <div class="skills-section">
+                        <h3><i class="fas fa-code"></i> 技能专长</h3>
+                        <div class="skill-tags">
+                            <span class="tag">AI/ML</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">OpenClaw</span>
+                            <span class="tag">RAG</span>
+                            <span class="tag">LLM</span>
+                            <span class="tag">知识库</span>
+                            <span class="tag">产品架构</span>
+                            <span class="tag">自动化</span>
+                        </div>
+                    </div>
                 </div>
-                <a href="assets/resume.pdf" download class="download-btn">
-                    <i class="fas fa-download"></i> 下载简历
-                </a>
+                
+                <!-- 简历预览 -->
+                <div class="resume-block">
+                    <h2><i class="fas fa-file-alt"></i> 我的简历</h2>
+                    <div class="resume-preview" onclick="openResume()">
+                        <div class="resume-thumb">
+                            <i class="fas fa-file-pdf"></i>
+                            <span>CV 全程 AI engineer 1.26.pdf</span>
+                        </div>
+                        <div class="resume-overlay">
+                            <i class="fas fa-eye"></i>
+                            <span>点击预览</span>
+                        </div>
+                    </div>
+                    <a href="assets/resume.pdf" download class="download-btn">
+                        <i class="fas fa-download"></i> 下载完整简历
+                    </a>
+                </div>
             </section>
             
             <!-- 右侧：作品集 -->
@@ -117,6 +151,21 @@
                 您的浏览器不支持视频播放。
             </video>
             <h3 id="video-title"></h3>
+        </div>
+    </div>
+    
+    <!-- 简历预览弹窗 -->
+    <div id="resume-modal" class="modal">
+        <div class="modal-content resume-modal-content">
+            <span class="close-btn" onclick="closeResume()">&times;</span>
+            <div class="pdf-viewer">
+                <iframe src="assets/resume.pdf" title="简历预览"></iframe>
+            </div>
+            <div class="pdf-actions">
+                <a href="assets/resume.pdf" download class="download-btn">
+                    <i class="fas fa-download"></i> 下载简历
+                </a>
+            </div>
         </div>
     </div>
     
