@@ -16,15 +16,15 @@ function closeResume() {
 const videos = [
     {
         src: 'assets/videos/Openclaw_Open-notebook_demo.mp4',
-        title: 'Openclaw+Open-notebook知识库读取文献演示'
+        title: 'Openclaw+Open-notebook 知识库读取文献演示'
     },
     {
         src: 'assets/videos/RAG_knowledge_base.mp4',
-        title: 'RAG知识库系统'
+        title: 'RAG 知识库系统'
     },
     {
         src: 'assets/videos/RAG_hallucination_elimination.mp4',
-        title: 'RAG知识库排除幻觉'
+        title: 'OpenClaw 自动化：企业知识库 + 飞书进度对齐'
     }
 ];
 
@@ -187,4 +187,4 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 console.log('🎉 程权个人名片网站已加载！');
-console.log('📧 联系邮箱: cheng_imperial_london@outlook.com');
+console.log('📧 联系邮箱：cheng_imperial_london@outlook.com');
