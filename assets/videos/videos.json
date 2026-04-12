@@ -4,9 +4,9 @@
       "id": 1,
       "title": "企业 Agent 工作中台",
       "filename": "企业 Agent 工作中台.mp4",
-      "thumbnail": "RAG_knowledge_base_thumb.jpg",
+      "thumbnail": "",
       "duration": "00:00:56.13",
-      "durationFormatted": "56秒",
+      "durationFormatted": "56 秒",
       "description": "企业级 Agent 工作中台系统，支持多 Agent 协同工作和任务调度",
       "tags": ["企业 Agent", "工作中台", "多 Agent 协同", "AI"]
     },
@@ -14,21 +14,11 @@
       "id": 2,
       "title": "基于知识图谱的高精度企业知识库（医疗）",
       "filename": "基于知识图谱的高精度企业知识库（医疗）.mp4",
-      "thumbnail": "RAG_hallucination_elimination_thumb.jpg",
+      "thumbnail": "",
       "duration": "00:01:11.25",
-      "durationFormatted": "1分11秒",
+      "durationFormatted": "1 分 11 秒",
       "description": "基于 3 维知识图谱的医疗行业企业知识库系统，支持高精度检索和 schema 切换",
       "tags": ["知识图谱", "企业知识库", "医疗", "3 维图谱", "高精度检索"]
-    },
-    {
-      "id": 3,
-      "title": "RAG知识库排除幻觉",
-      "filename": "RAG_hallucination_elimination.mp4",
-      "thumbnail": "RAG_hallucination_elimination_thumb.jpg",
-      "duration": "00:01:11.25",
-      "durationFormatted": "1分11秒",
-      "description": "演示RAG知识库如何有效减少和排除AI生成内容中的幻觉问题",
-      "tags": ["RAG", "幻觉消除", "知识库", "AI可靠性", "内容安全"]
     }
   ]
 }
