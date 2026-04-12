@@ -2,23 +2,23 @@
   "videos": [
     {
       "id": 1,
-      "title": "Openclaw+Open-notebook知识库读取文献演示",
-      "filename": "Openclaw_Open-notebook_demo.mp4",
-      "thumbnail": "Openclaw_Open-notebook_demo_thumb.jpg",
-      "duration": "00:05:52.83",
-      "durationFormatted": "5分52秒",
-      "description": "演示如何使用Openclaw和Open-notebook读取知识库文献，展示AI工具在文献管理中的应用",
-      "tags": ["Openclaw", "Open-notebook", "知识库", "文献管理", "AI工具"]
-    },
-    {
-      "id": 2,
-      "title": "RAG知识库",
-      "filename": "RAG_knowledge_base.mp4",
+      "title": "企业 Agent 工作中台",
+      "filename": "企业 Agent 工作中台.mp4",
       "thumbnail": "RAG_knowledge_base_thumb.jpg",
       "duration": "00:00:56.13",
       "durationFormatted": "56秒",
-      "description": "介绍RAG（检索增强生成）知识库的原理和实现方式",
-      "tags": ["RAG", "知识库", "检索增强生成", "AI", "NLP"]
+      "description": "企业级 Agent 工作中台系统，支持多 Agent 协同工作和任务调度",
+      "tags": ["企业 Agent", "工作中台", "多 Agent 协同", "AI"]
+    },
+    {
+      "id": 2,
+      "title": "基于知识图谱的高精度企业知识库（医疗）",
+      "filename": "基于知识图谱的高精度企业知识库（医疗）.mp4",
+      "thumbnail": "RAG_hallucination_elimination_thumb.jpg",
+      "duration": "00:01:11.25",
+      "durationFormatted": "1分11秒",
+      "description": "基于 3 维知识图谱的医疗行业企业知识库系统，支持高精度检索和 schema 切换",
+      "tags": ["知识图谱", "企业知识库", "医疗", "3 维图谱", "高精度检索"]
     },
     {
       "id": 3,
