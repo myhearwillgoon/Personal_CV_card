@@ -15,16 +15,16 @@ function closeResume() {
 // 视频配置
 const videos = [
     {
-        src: 'assets/videos/Openclaw_Open-notebook_demo.mp4',
-        title: 'Openclaw+Open-notebook 知识库读取文献演示'
+        src: 'assets/videos/企业 Agent 工作中台.mp4',
+        title: '企业 Agent 工作中台'
     },
     {
-        src: 'assets/videos/RAG_knowledge_base.mp4',
-        title: 'RAG 知识库系统'
+        src: 'assets/videos/基于知识图谱的高精度企业知识库（医疗）.mp4',
+        title: '基于知识图谱的高精度企业知识库（医疗）'
     },
     {
-        src: 'assets/videos/RAG_hallucination_elimination.mp4',
-        title: 'OpenClaw 自动化：企业知识库 + 飞书进度对齐'
+        src: 'assets/videos/医疗三维图谱项目.mp4',
+        title: '医疗三维图谱项目'
     }
 ];
 
