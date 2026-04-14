@@ -19,6 +19,16 @@
       "durationFormatted": "1 分 11 秒",
       "description": "基于 3 维知识图谱的医疗行业企业知识库系统，支持高精度检索和 schema 切换",
       "tags": ["知识图谱", "企业知识库", "医疗", "3 维图谱", "高精度检索"]
+    },
+    {
+      "id": 3,
+      "title": "医疗三维图谱项目",
+      "filename": "医疗三维图谱项目.mp4",
+      "thumbnail": "",
+      "duration": "00:00:00.00",
+      "durationFormatted": "待更新",
+      "description": "医疗行业三维知识图谱项目演示",
+      "tags": ["医疗", "知识图谱", "三维图谱", "AI"]
     }
   ]
 }
