@@ -12,13 +12,13 @@
     },
     {
       "id": 2,
-      "title": "基于知识图谱的高精度企业知识库（医疗）",
-      "filename": "基于知识图谱的高精度企业知识库（医疗）.mp4",
+      "title": "联想企业AI中台",
+      "filename": "联想企业AI中台.mp4",
       "thumbnail": "",
-      "duration": "00:01:11.25",
-      "durationFormatted": "1 分 11 秒",
-      "description": "基于 3 维知识图谱的医疗行业企业知识库系统，支持高精度检索和 schema 切换",
-      "tags": ["知识图谱", "企业知识库", "医疗", "3 维图谱", "高精度检索"]
+      "duration": "00:01:30.00",
+      "durationFormatted": "1 分 30 秒",
+      "description": "联想企业级AI中台系统，支持MCP协议和多模态知识管理",
+      "tags": ["联想", "企业AI中台", "MCP", "知识管理", "多模态"]
     },
     {
       "id": 3,
