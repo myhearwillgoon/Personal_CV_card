@@ -19,8 +19,8 @@ const videos = [
         title: '企业 Agent 工作中台'
     },
     {
-        src: 'assets/videos/基于知识图谱的高精度企业知识库（医疗）.mp4',
-        title: '基于知识图谱的高精度企业知识库（医疗）'
+        src: 'assets/videos/联想企业AI中台.mp4',
+        title: '联想企业AI中台'
     },
     {
         src: 'assets/videos/医疗三维图谱项目.mp4',
